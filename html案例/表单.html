@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单案例</title>
+</head>
+
+<body>
+    <form action="demo.php" method="POST" name="f1">
+        <label for="text">用户名：</label>
+        <input type="text" name="username" value="请输入用户名" id="text"><br>
+        <!--文本框 用户可以输入文字-->
+        密码：<input type="password" name="pwd" maxlength="8"><br>
+        <!--密码框 可以隐藏输入的内容 maxlength规定最大长度-->
+        性别：<label for="r1">男</label><input type="radio" name="sex" value="男" checked="checked" id="r1"> <label for="r2">女</label><input type="radio" name="sex" value="女" id="r2"><br>
+        <!--单选按钮 name属性必须相同才可以实现多选一 checked规定默认选项-->
+        爱好：吃饭<input type="checkbox" value="吃饭" name="hobby"> 睡觉<input type="checkbox" value="睡觉" name="hobby"> 打游戏<input type="checkbox" value="打游戏" name="hobby"><br>
+        <!--复选框 name属性需相同-->
+        受教育程度：<select>
+            <option selected="selected">博士</option>
+            <option>硕士</option>
+            <option>本科</option>
+            <option>专科</option>
+            <option>高中</option>
+        </select><br> 上传图片：
+        <input type="file"><br>
+        <input type="button" value="获取验证码"><br>
+        <input type="submit" value="注册">
+        <input type="reset" value="重置">
+    </form>
+</body>
+
+</html>
